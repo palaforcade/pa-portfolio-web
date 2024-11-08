@@ -17,31 +17,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&display=swap"
         rel="stylesheet">
+
+    <script src="js/navbar.js" defer></script>
 </head>
 
-<body>
-    <header class="main-header">
-        <div class="main-header__row-socials">
-            <div class="row-socials__item">
-                <img src="assets/icons/icon_email.png" alt="Email" width="18" height="18">
-                <div>Email</div>
-            </div>
-            <div class="row-socials__item">
-                <img src="assets/icons/icon_linkedin.png" alt="LinkedIn" width="18" height="18">
-                <div>LinkedIn</div>
-            </div>
-            <div class="row-socials__item">
-                <img src="assets/icons/icon_github.png" alt="GitHub" width="18" height="18">
-                <div>GitHub</div>
-            </div>
-        </div>
-        <div class="main-header__name">Pierre-Amaury Laforcade</div>
-        <div class="main-header__row-nav">
-            <div class="row-nav__item" onclick="window.location.href='pages/resume.html'">Resume</div>
-            <div class="row-nav__item" onclick="window.location.href='pages/projects.html'">Projects</div>
-        </div>
-    </header>
 
+<body>
+    <main-navbar></main-navbar>
 
     <main class="main-content">
         <img src="assets/images/profile.jpg" alt="Profile Picture" class="profile-picture">
@@ -58,6 +40,15 @@
             products and my contributions to the tech world.
         </p>
     </main>
+
+
+    <div class="logo-carousel">
+        <img src="assets/images/logo_cs.png" alt="CentraleSupélec" class="logo-carousel__item">
+        <img src="assets/images/logo_stanford.png" alt="Stanford University" class="logo-carousel__item">
+        <img src="assets/images/logo_reflect.png" alt="Reflect" class="logo-carousel__item">
+        <img src="assets/images/logo_moodys.png" alt="Moody's Analytics" class="logo-carousel__item">
+        <img src="assets/images/logo_triz_conseil.png" alt="Triz Conseil" class="logo-carousel__item">
+    </div>
 </body>
 
 </html>

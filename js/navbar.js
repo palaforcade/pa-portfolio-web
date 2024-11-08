@@ -19,8 +19,8 @@ class NavBar extends HTMLElement {
                 </div>
                 <div class="main-header__name" onclick="window.location.href='../index.html'">Pierre-Amaury Laforcade</div>
                 <div class="main-header__row-nav">
-                    <div class="row-nav__item" onclick="window.location.href='pages/resume.html'">Resume</div>
-                    <div class="row-nav__item" onclick="window.location.href='pages/projects.html'">Projects</div>
+                    <div class="row-nav__item" onclick="window.location.href='/pages/resume.html'">Resume</div>
+                    <div class="row-nav__item" onclick="window.location.href='/pages/projects.html'">Projects</div>
                 </div>
             </header>            
     `
