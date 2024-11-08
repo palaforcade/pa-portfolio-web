@@ -1,0 +1,30 @@
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 80px;
+}
+
+.main-content__description {
+    width: 50%;
+    text-align: center;
+    font-size: 14px;
+}
+
+.profile-picture {
+    border-radius: 50%;
+    border: 1px solid #5D4404;
+    width: 200px;
+    height: 200px;
+}
+
+.main-title {
+    width: 50%;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    background-image: linear-gradient(to left, #5D4404, #FFFFFF);
+    color: transparent;
+    background-clip: text;
+}
