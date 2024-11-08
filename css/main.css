@@ -2,6 +2,8 @@ body {
     font-family: Inter, sans-serif;
     background: linear-gradient(#202126, #0D0D0D);
     color: #FFFFFF;
+    font-weight: 200;
+    font-size: 14px;
 }
 
 .main-header {
@@ -14,9 +16,16 @@ body {
     border-bottom: 1px solid #5D4404;
 }
 
+main {
+    margin-top: 110px;
+    ;
+}
+
 .main-header__name {
     color: #747474;
     font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
 }
 
 .main-header__row-socials {

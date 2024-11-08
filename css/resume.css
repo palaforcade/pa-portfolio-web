@@ -1,0 +1,44 @@
+.resume-main {
+    margin: 20px 100px;
+}
+
+.resume-main h2 {
+    font-size: 24px;
+    font-weight: 500;
+    background-image: linear-gradient(to right, #FFFFFF 0%, #5D4404 15%);
+    color: transparent;
+    background-clip: text;
+}
+
+.resume-main h3 {
+    font-size: 18px;
+    font-weight: 500;
+    color: #8F7B48;
+    margin-bottom: 12px;
+}
+
+.resume-main p {
+    font-size: 14px;
+}
+
+
+.resume-main__section {
+    padding-left: 40px;
+}
+
+.resume-main__section li {
+    padding-left: 15px;
+}
+
+.section-company {
+    font-size: 12px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.section-dates {
+    font-size: 12px;
+    font-style: italic;
+    color: #C5C5C5;
+    margin-bottom: 12px;
+}
