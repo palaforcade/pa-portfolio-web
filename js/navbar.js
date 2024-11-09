@@ -4,15 +4,15 @@ class NavBar extends HTMLElement {
         this.innerHTML = `
         <header class="main-header">
                 <div class="main-header__row-socials">
-                    <div class="row-socials__item">
+                    <div class="row-socials__item" onclick="window.location.href='mailto:pa.laforcade@gmail.com'">
                         <img src="../assets/icons/icon_email.png" alt="Email" width="18" height="18">
                         <div>Email</div>
                     </div>
-                    <div class="row-socials__item">
+                    <div class="row-socials__item" onclick="window.location.href='https://www.linkedin.com/in/pa-laforcade/'">
                         <img src="../assets/icons/icon_linkedin.png" alt="LinkedIn" width="18" height="18">
                         <div>LinkedIn</div>
                     </div>
-                    <div class="row-socials__item">
+                    <div class="row-socials__item" onclick="window.location.href='https://github.com/palaforcade'">
                         <img src="../assets/icons/icon_github.png" alt="GitHub" width="18" height="18">
                         <div>GitHub</div>
                     </div>

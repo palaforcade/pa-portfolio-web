@@ -1,0 +1,30 @@
+.projects-main {
+    margin: 20px 100px;
+}
+
+.projects-main__title {
+    font-size: 22px;
+    font-weight: 500;
+    background-image: linear-gradient(to right, #FFFFFF 0%, #5D4404 22%);
+    color: transparent;
+    background-clip: text;
+}
+
+.projects-main__example-container {
+    display: flex;
+    margin: 40px 0;
+    justify-content: center;
+    gap: 40px;
+}
+
+.example-container__img {
+    width: 20%;
+}
+
+.example-container__img--large {
+    width: 40%;
+}
+
+.example-container__img--xlarge {
+    width: 70%;
+}
