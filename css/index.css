@@ -2,13 +2,12 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 80px;
 }
 
 .main-content__description {
-    width: 50%;
     text-align: center;
     font-size: 14px;
+    margin: 0 20vw;
 }
 
 .profile-picture {
@@ -31,6 +30,7 @@
 .logo-carousel {
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
     align-items: center;
     margin-top: 40px;
     padding: 0 80px;
@@ -42,4 +42,10 @@
 
 .logo-carousel__item {
     height: 40px;
+}
+
+@media (max-width: 720px) {
+    .main-content__description {
+        margin: 0 10vw;
+    }
 }
