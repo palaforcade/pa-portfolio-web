@@ -5,9 +5,7 @@
 .projects-main__title {
     font-size: 22px;
     font-weight: 500;
-    background-image: linear-gradient(to right, #FFFFFF 0%, #5D4404 22%);
-    color: transparent;
-    background-clip: text;
+    color: #8F7B48;
 }
 
 .projects-main__example-container {
