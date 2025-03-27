@@ -2,6 +2,21 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: relative;
+}
+
+.main-content::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background:
+        radial-gradient(1000px circle at 0% 0%, rgba(143, 123, 72, 0.1) 0%, transparent 100%),
+        radial-gradient(1000px circle at 100% 100%, rgba(93, 68, 4, 0.15) 0%, transparent 100%),
+        radial-gradient(600px circle at 50% 60%, rgba(143, 123, 72, 0.2) 0%, transparent 100%);
+    z-index: -1;
 }
 
 .main-content__description {
@@ -89,18 +104,50 @@
 .logo-carousel {
     display: flex;
     justify-content: space-around;
-    flex-wrap: wrap;
     align-items: center;
     margin-top: 40px;
-    padding: 1rem 8vw;
-    gap: 3rem;
-    background-color: #D8D8D8;
-    border-top: 2px solid #8F7B48;
-    border-bottom: 2px solid #8F7B48;
+    padding: 3rem 0;
+    overflow: hidden;
+    position: relative;
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
+    margin-right: calc(-50vw + 50%);
+}
+
+.logo-carousel__container {
+    width: 100%;
+    overflow: hidden;
+}
+
+.logo-carousel__track {
+    display: flex;
+    animation: slide 30s linear infinite;
+    gap: 8rem;
+    padding: 0 4rem;
+    width: max-content;
 }
 
 .logo-carousel__item {
-    width: 6rem;
+    height: 3rem;
+    width: auto;
+    object-fit: contain;
+    filter: grayscale(100%) brightness(200%);
+    transition: filter 0.3s ease;
+    flex-shrink: 0;
+}
+
+.logo-carousel__item:hover {
+    filter: grayscale(0%) brightness(100%);
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
 }
 
 .home-footer {

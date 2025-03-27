@@ -62,9 +62,49 @@ main {
     color: #747474;
 }
 
-@media (max-width: 720px) {
+/* Mobile Menu Styles */
+.main-header__menu-toggle {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #FFFFFF;
+}
 
-    .main-header__row-socials {
+.main-header__row-nav {
+    transition: max-height 0.3s ease;
+}
+
+.main-header__row-nav.open {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Media query for mobile view */
+@media (max-width: 720px) {
+    .main-header {
         flex-direction: column;
+    }
+
+    .main-header__row-socials,
+    .main-header__name {
+        margin-bottom: 10px;
+    }
+
+    /* Hide regular nav items and show the menu toggle on mobile */
+    .main-header__row-nav {
+        display: none;
+        max-height: 0;
+        overflow: hidden;
+    }
+
+    .main-header__menu-toggle {
+        display: block;
+    }
+
+    /* Show menu items when open */
+    .main-header__row-nav.open {
+        display: flex;
+        max-height: 300px;
     }
 }

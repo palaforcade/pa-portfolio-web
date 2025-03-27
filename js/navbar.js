@@ -2,7 +2,7 @@ class NavBar extends HTMLElement {
     connectedCallback() {
 
         this.innerHTML = `
-        <header class="main-header">
+            <header class="main-header">
                 <div class="main-header__row-socials">
                     <div class="row-socials__item" onclick="window.location.href='mailto:pa.laforcade@gmail.com'">
                         <img src="../assets/icons/icon_email.png" alt="Email" width="18" height="18">
@@ -18,12 +18,21 @@ class NavBar extends HTMLElement {
                     </div>
                 </div>
                 <div class="main-header__name" onclick="window.location.href='../index.html'">Pierre-Amaury Laforcade</div>
-                <div class="main-header__row-nav">
+                
+                <!-- Mobile Menu Toggle Button -->
+                <div class="main-header__menu-toggle" onclick="toggleMenu()">☰</div>
+                
+                <div class="main-header__row-nav" id="nav-menu">
                     <div class="row-nav__item" onclick="window.location.href='/pages/resume.html'">Resume</div>
                     <div class="row-nav__item" onclick="window.location.href='/pages/projects.html'">Projects</div>
                 </div>
-            </header>            
+            </header>
     `
     }
 }
 customElements.define('main-navbar', NavBar);
+
+function toggleMenu() {
+    const navMenu = document.getElementById('nav-menu');
+    navMenu.classList.toggle('active');
+}
