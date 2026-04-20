@@ -1,12 +1,13 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-    <title>Pierre-Amaury Laforcade - Portfolio</title>
+    <title>Pierre-Amaury Laforcade — Portfolio</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Pierre-Amaury Laforcade's Portfolio">
+    <meta name="description" content="Pierre-Amaury Laforcade — engineer across data, infrastructure, and applied AI.">
     <meta name="keywords"
-        content="portfolio, software development, programming, product management, data analysis, data science">
+        content="portfolio, software engineering, data engineering, applied AI, LLM, infrastructure, Rust, Python, AWS, compliance">
     <meta name="author" content="Pierre-Amaury Laforcade">
 
     <link rel="stylesheet" href="css/main.css">
@@ -15,65 +16,72 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700&family=Geist+Mono:wght@400;500&display=swap"
         rel="stylesheet">
 
     <script src="js/navbar.js" defer></script>
 </head>
 
-
 <body>
     <main-navbar></main-navbar>
 
     <main class="main-content">
-        <div class="main-content__header-container">
-            <h2 class="main-title">
-                Driving Impactful Innovation in Data Science and Operations
-            </h2>
-            <div class="profile-picture">
-                <img src="assets/images/profile.jpg" alt="Profile Picture">
+        <section class="hero">
+            <div class="hero__copy">
+                <div class="hero__meta reveal reveal-1">
+                    <span class="hero__meta-line"></span>
+                    <span class="hero__meta-text">Pierre-Amaury Laforcade · Portfolio</span>
+                </div>
+                <h1 class="main-title reveal reveal-2">
+                    Engineer across <em>data</em>, infrastructure, and applied <em>AI</em>.
+                </h1>
+                <p class="main-content__description reveal reveal-3">
+                    <strong>Stanford MS&amp;E</strong> and <strong>CentraleSupélec</strong>-trained engineer working at
+                    the intersection of data, infrastructure, and applied AI. Currently at <strong>Zest AI</strong>,
+                    building pipelines and data-quality tooling for lending-industry clients under strict regulatory
+                    constraints. Previously led an engineering team at <strong>Stanford Medicine</strong> on hospital
+                    operations simulation and LLM tooling for executives, and was employee&nbsp;#6 at a SaaS startup
+                    where I rebuilt the infrastructure in Terraform and led the company through its first ISO 27001
+                    certification. Comfortable across the stack — product strategy, customer-facing work, and hands-on
+                    engineering.
+                </p>
+                <div class="main-content__button-container reveal reveal-4">
+                    <a href="/pages/projects.html" class="button-container__button button-primary">
+                        See my projects
+                    </a>
+                    <a href="mailto:pa.laforcade@gmail.com" class="button-container__button button-secondary">
+                        Contact me
+                    </a>
+                </div>
             </div>
-        </div>
-
-        <p class="main-content__description">
-            Currently pursuing a Master's in Management Science and Engineering at Stanford University, I have a diverse
-            portfolio of experiences, including software engineering and cloud operations in the industry, as well as my
-            current position as a data scientist for Stanford's Lucile Packard Children's Hospital. My journey has
-            equipped me with skills in product strategy, operations research, machine learning, UX/UI design, and
-            project management. Explore my full resume to learn more about my commitment to creating transformative
-            products and my contributions to the tech world.
-        </p>
-
-        <div class="main-content__button-container">
-            <a href="/pages/projects.html" class="button-container__button button-primary">
-                See my projects
-            </a>
-            <a href="mailto:pa.laforcade@gmail.com" class="button-container__button button-secondary">
-                Contact me
-            </a>
-        </div>
+            <div class="profile-picture reveal reveal-2">
+                <img src="assets/images/profile.jpg" alt="Portrait of Pierre-Amaury Laforcade">
+            </div>
+        </section>
     </main>
 
-
-    <div class="logo-carousel">
+    <section class="logo-carousel reveal reveal-5">
+        <p class="logo-carousel__heading">Worked with &amp; studied at</p>
         <div class="logo-carousel__container">
             <div class="logo-carousel__track">
                 <img src="assets/images/logo_cs.png" alt="CentraleSupélec" class="logo-carousel__item">
                 <img src="assets/images/logo_stanford.png" alt="Stanford University" class="logo-carousel__item">
+                <img src="assets/images/logo_zest.png" alt="Zest AI" class="logo-carousel__item">
                 <img src="assets/images/logo_reflect.png" alt="Reflect" class="logo-carousel__item">
                 <img src="assets/images/logo_moodys.png" alt="Moody's Analytics" class="logo-carousel__item">
                 <img src="assets/images/logo_triz_conseil.png" alt="Triz Conseil" class="logo-carousel__item">
                 <img src="assets/images/logo_cs.png" alt="CentraleSupélec" class="logo-carousel__item">
                 <img src="assets/images/logo_stanford.png" alt="Stanford University" class="logo-carousel__item">
+                <img src="assets/images/logo_zest.png" alt="Zest AI" class="logo-carousel__item">
                 <img src="assets/images/logo_reflect.png" alt="Reflect" class="logo-carousel__item">
                 <img src="assets/images/logo_moodys.png" alt="Moody's Analytics" class="logo-carousel__item">
                 <img src="assets/images/logo_triz_conseil.png" alt="Triz Conseil" class="logo-carousel__item">
             </div>
         </div>
-    </div>
+    </section>
 
     <footer class="home-footer">
-        <p>© 2024 Pierre-Amaury Laforcade, all rights reserved</p>
+        <p>© 2024 Pierre-Amaury Laforcade · All rights reserved</p>
     </footer>
 </body>
 
